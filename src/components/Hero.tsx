@@ -8,30 +8,29 @@ export const Hero = () => {
       className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/5 pointer-events-none" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              Hi, I'm{" "}
-              <span className="gradient-text">John Doe</span>
+              Hi, I'm <span className="gradient-text">Ammon Warnick</span>
             </h1>
           </div>
-          
+
           <div className="animate-slide-up animate-delay-100">
             <p className="text-xl md:text-2xl text-muted-foreground mb-4">
               Full Stack Developer
             </p>
           </div>
-          
+
           <div className="animate-slide-up animate-delay-200">
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              I build exceptional digital experiences that combine beautiful design
-              with robust functionality. Specialized in React, Node.js, and modern
-              web technologies.
+              I build exceptional digital experiences that combine beautiful
+              design with robust functionality. Specialized in React, Node.js,
+              and modern web technologies.
             </p>
           </div>
-          
+
           <div className="animate-slide-up animate-delay-300 flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button size="lg" className="group" asChild>
               <a href="#projects">
@@ -43,7 +42,7 @@ export const Hero = () => {
               <a href="#contact">Get In Touch</a>
             </Button>
           </div>
-          
+
           <div className="animate-fade-in animate-delay-400 flex items-center justify-center gap-4">
             <a
               href="https://github.com"

@@ -16,20 +16,15 @@ export const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a full-stack developer with over 5 years of experience building
-                web applications. I specialize in creating responsive, user-friendly
-                interfaces and robust backend systems.
+                I'm a full-stack developer with over 5 years of experience
+                building web applications. I specialize in creating responsive,
+                user-friendly interfaces and robust backend systems.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                My passion lies in solving complex problems and turning ideas into
-                reality through clean, efficient code. I'm constantly learning new
-                technologies and best practices to stay at the forefront of web
-                development.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding, you can find me contributing to open-source
-                projects, writing technical articles, or exploring the latest in web
-                technologies.
+                My passion lies in solving complex problems and turning ideas
+                into reality through clean, efficient code. I'm constantly
+                learning new technologies and best practices to stay at the
+                forefront of web development.
               </p>
             </div>
 
@@ -42,7 +37,7 @@ export const About = () => {
                   <div className="flex-1">
                     <h3 className="font-semibold mb-1">Experience</h3>
                     <p className="text-sm text-muted-foreground">
-                      5+ years in professional web development
+                      6+ years in professional web development
                     </p>
                   </div>
                 </CardContent>

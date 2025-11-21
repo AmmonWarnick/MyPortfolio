@@ -16,7 +16,7 @@ export const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
@@ -51,10 +51,12 @@ export const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Get In Touch
+            </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind or want to collaborate? I'd love to hear from
-              you!
+              Have a project in mind or want to collaborate? I'd love to hear
+              from you!
             </p>
           </div>
 
@@ -69,10 +71,10 @@ export const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
                       <a
-                        href="mailto:hello@example.com"
+                        href="mailto:warnick.ammon@gmail.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        hello@example.com
+                        warnick.ammon@gmail.com
                       </a>
                     </div>
                   </div>
@@ -83,9 +85,7 @@ export const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Location</h3>
-                      <p className="text-muted-foreground">
-                        San Francisco, CA
-                      </p>
+                      <p className="text-muted-foreground">Glendale, AZ, USA</p>
                     </div>
                   </div>
 
@@ -93,7 +93,7 @@ export const Contact = () => {
                     <h3 className="font-semibold mb-4">Connect With Me</h3>
                     <div className="flex gap-3">
                       <a
-                        href="https://github.com"
+                        href="https://github.com/AmmonWarnick"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-3 rounded-lg border border-border hover:border-primary hover:bg-primary/10 transition-all"
@@ -102,7 +102,7 @@ export const Contact = () => {
                         <Github className="h-5 w-5" />
                       </a>
                       <a
-                        href="https://linkedin.com"
+                        href="https://linkedin.com/in/ammon-warnick/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-3 rounded-lg border border-border hover:border-primary hover:bg-primary/10 transition-all"
@@ -111,7 +111,7 @@ export const Contact = () => {
                         <Linkedin className="h-5 w-5" />
                       </a>
                       <a
-                        href="mailto:hello@example.com"
+                        href="mailto:warnick.ammon@gmail.com"
                         className="p-3 rounded-lg border border-border hover:border-primary hover:bg-primary/10 transition-all"
                         aria-label="Email"
                       >
