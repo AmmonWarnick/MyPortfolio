@@ -1,61 +1,42 @@
 import { ExternalLink, Github } from "lucide-react";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Memory Companion",
     description:
-      "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=500&fit=crop",
-    tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "Full-stack website that sends out weekly emails that are then compiled into a hard cover book automatically.",
+    image:
+      "https://images.pexels.com/photos/768125/pexels-photo-768125.jpeg?w=800&h=500&fit=crop",
+    tags: ["React", "Node.js", "MongoDB", "Stripe", "Bootstrap"],
+    github: "https://github.com/AmmonWarnick/MemoryCompanion",
+    live: "https://memory-companion.com",
   },
   {
-    title: "Task Management App",
+    title: "Learn Free Finance",
     description:
-      "Collaborative task management tool with real-time updates, team features, and analytics.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
-    tags: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "A full frontend website that offers free finance eduaction and finance tools.",
+    image:
+      "https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?w=800&h=500&fit=crop",
+    tags: ["Node.js", "TypeScript", "React", "Tailwind", "Stripe"],
+    github: "https://github.com/AmmonWarnick/learnfreefinance",
+    live: "https://learnfreefinance.pages.dev",
   },
   {
-    title: "Social Media Dashboard",
+    title: "Bank Statement Converter",
     description:
-      "Analytics dashboard for social media metrics with data visualization and reporting features.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
-    tags: ["React", "D3.js", "Express", "MongoDB"],
-    github: "https://github.com",
-    live: "https://example.com",
-  },
-  {
-    title: "Weather Forecast App",
-    description:
-      "Real-time weather application with location-based forecasts and interactive maps.",
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&h=500&fit=crop",
-    tags: ["React", "API Integration", "Charts", "Geolocation"],
-    github: "https://github.com",
-    live: "https://example.com",
-  },
-  {
-    title: "Blog Platform",
-    description:
-      "Modern blogging platform with markdown support, SEO optimization, and comment system.",
-    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=500&fit=crop",
-    tags: ["Next.js", "MDX", "Prisma", "Authentication"],
-    github: "https://github.com",
-    live: "https://example.com",
-  },
-  {
-    title: "Fitness Tracker",
-    description:
-      "Personal fitness tracking application with workout plans, progress charts, and goal setting.",
-    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=500&fit=crop",
-    tags: ["React Native", "Firebase", "Charts", "Health API"],
-    github: "https://github.com",
+      "A full-stack website that offers to convert PDF bank statements into CSV files for easy processing.",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
+    tags: ["React", "Supabase", "Tailwind", "Stripe", "Typescript"],
+    github: "https://github.com/AmmonWarnick/transcode-spark",
     live: "https://example.com",
   },
 ];
@@ -84,6 +65,19 @@ export const Projects = () => {
               >
                 <CardHeader className="p-0">
                   <div className="relative overflow-hidden aspect-video">
+                    {project.live === "https://example.com" && (
+                      <Badge
+                        variant="default"
+                        style={{
+                          position: "absolute",
+                          right: "5px",
+                          top: "10px",
+                          textAlign: "center",
+                        }}
+                      >
+                        In Progress
+                      </Badge>
+                    )}
                     <img
                       src={project.image}
                       alt={project.title}
@@ -93,7 +87,9 @@ export const Projects = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    {project.title}
+                  </h3>
                   <p className="text-sm text-muted-foreground mb-4">
                     {project.description}
                   </p>
@@ -106,7 +102,12 @@ export const Projects = () => {
                   </div>
                 </CardContent>
                 <CardFooter className="p-6 pt-0 flex gap-2">
-                  <Button variant="outline" size="sm" asChild className="flex-1">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="flex-1"
+                  >
                     <a
                       href={project.github}
                       target="_blank"
