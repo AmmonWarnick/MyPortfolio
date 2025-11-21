@@ -1,26 +1,33 @@
-import { Code2, Database, Globe, Layout, Server, Smartphone } from "lucide-react";
+import {
+  Code2,
+  Database,
+  Globe,
+  Layout,
+  Server,
+  Smartphone,
+} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const skills = [
   {
     icon: Code2,
     title: "Frontend Development",
-    description: "React, TypeScript, Next.js, Tailwind CSS",
+    description: "React, TypeScript, Next.js, Bootstrap, Tailwind CSS",
   },
   {
     icon: Server,
     title: "Backend Development",
-    description: "Node.js, Express, Python, REST APIs",
+    description: "Node.js, Express, REST APIs",
   },
   {
     icon: Database,
     title: "Databases",
-    description: "PostgreSQL, MongoDB, Redis, Supabase",
+    description: "MongoDB, SQL, Supabase",
   },
   {
     icon: Globe,
     title: "Web Technologies",
-    description: "HTML5, CSS3, JavaScript, WebSockets",
+    description: "HTML5, CSS, SCSS, JavaScript, WebSockets, NPM",
   },
   {
     icon: Layout,

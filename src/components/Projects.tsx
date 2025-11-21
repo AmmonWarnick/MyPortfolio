@@ -37,7 +37,7 @@ const projects = [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
     tags: ["React", "Supabase", "Tailwind", "Stripe", "Typescript"],
     github: "https://github.com/AmmonWarnick/transcode-spark",
-    live: "https://example.com",
+    live: "/404",
   },
 ];
 
@@ -65,7 +65,7 @@ export const Projects = () => {
               >
                 <CardHeader className="p-0">
                   <div className="relative overflow-hidden aspect-video">
-                    {project.live === "https://example.com" && (
+                    {project.live === "/404" && (
                       <Badge
                         variant="default"
                         style={{

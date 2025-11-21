@@ -45,7 +45,7 @@ export const Hero = () => {
 
           <div className="animate-fade-in animate-delay-400 flex items-center justify-center gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/AmmonWarnick"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/10 transition-all"
@@ -54,7 +54,7 @@ export const Hero = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/ammon-warnick/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/10 transition-all"
@@ -63,7 +63,7 @@ export const Hero = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:warnick.ammon@gmail.com"
               className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/10 transition-all"
               aria-label="Email"
             >

@@ -16,7 +16,7 @@ export const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a full-stack developer with over 5 years of experience
+                I'm a full-stack developer with over 6 years of experience
                 building web applications. I specialize in creating responsive,
                 user-friendly interfaces and robust backend systems.
               </p>
@@ -25,6 +25,11 @@ export const About = () => {
                 into reality through clean, efficient code. I'm constantly
                 learning new technologies and best practices to stay at the
                 forefront of web development.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                In my free time you can catch me working on side projects,
+                spending time with my lovely family, or just relaxing with a fun
+                game.
               </p>
             </div>
 
