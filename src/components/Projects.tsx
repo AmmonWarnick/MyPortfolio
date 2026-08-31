@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Reveal } from "@/components/Reveal";
 
 const projects = [
   {
@@ -22,7 +23,7 @@ const projects = [
   {
     title: "Learn Free Finance",
     description:
-      "A full frontend website that offers free finance eduaction and finance tools.",
+      "A full frontend website that offers free finance education and finance tools.",
     image:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
     tags: ["Node.js", "TypeScript", "React", "Tailwind", "Stripe"],
@@ -64,23 +65,24 @@ export const Projects = () => {
     <section id="projects" className="py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Featured Projects
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              A selection of my recent work showcasing various technologies and
-              solutions
-            </p>
-          </div>
+          <Reveal>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Featured Projects
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                A selection of my recent work showcasing various technologies and
+                solutions
+              </p>
+            </div>
+          </Reveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
-              <Card
-                key={project.title}
-                className="group overflow-hidden hover:shadow-xl transition-all duration-300 animate-slide-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+              <Reveal key={project.title} delay={(index % 3) * 0.12} variant="zoom">
+                <Card
+                  className="group h-full overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                >
                 <CardHeader className="p-0">
                   <div className="relative overflow-hidden aspect-video">
                     {project.live === "/404" && (
@@ -150,7 +152,8 @@ export const Projects = () => {
                     </Button>
                   )}
                 </CardFooter>
-              </Card>
+                </Card>
+              </Reveal>
             ))}
           </div>
         </div>

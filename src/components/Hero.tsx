@@ -8,6 +8,7 @@ export const Hero = () => {
       className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/5 pointer-events-none" />
+      <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/10 blur-3xl animate-pulse pointer-events-none" style={{ animationDuration: "6s" }} />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -19,15 +20,22 @@ export const Hero = () => {
 
           <div className="animate-slide-up animate-delay-100">
             <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-              Full Stack Developer
+              Full Stack Developer · React · TypeScript · Node.js
             </p>
           </div>
 
           <div className="animate-slide-up animate-delay-200">
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              I build exceptional digital experiences that combine beautiful
-              design with robust functionality. Specialized in React, Node.js,
-              and modern web technologies.
+            <p className="text-lg text-muted-foreground mb-4 max-w-2xl mx-auto">
+              I've spent the last 6+ years building web apps that real people
+              use, from a service that turns weekly emails into printed books
+              to a tool that converts bank statement PDFs into spreadsheets.
+              I'm comfortable across the stack with React, TypeScript, Node.js,
+              and Supabase, and I use AI tools in my daily workflow to move
+              faster without cutting corners.
+            </p>
+            <p className="text-base font-medium text-primary mb-8">
+              Based in Glendale, AZ · Open to full-time opportunities (remote
+              or on-site)
             </p>
           </div>
 

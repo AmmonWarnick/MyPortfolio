@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import { Reveal } from "@/components/Reveal";
 
 export const Contact = () => {
   const { toast } = useToast();
@@ -50,17 +51,20 @@ export const Contact = () => {
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Get In Touch
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind or want to collaborate? I'd love to hear
-              from you!
-            </p>
-          </div>
+          <Reveal>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Get In Touch
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Have a project in mind or want to collaborate? I'd love to hear
+                from you!
+              </p>
+            </div>
+          </Reveal>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <Reveal variant="left">
             <div className="space-y-6">
               <Card>
                 <CardContent className="p-6">
@@ -122,7 +126,9 @@ export const Contact = () => {
                 </CardContent>
               </Card>
             </div>
+            </Reveal>
 
+            <Reveal variant="right" delay={0.15}>
             <Card>
               <CardContent className="p-6">
                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -165,6 +171,7 @@ export const Contact = () => {
                 </form>
               </CardContent>
             </Card>
+            </Reveal>
           </div>
         </div>
       </div>
