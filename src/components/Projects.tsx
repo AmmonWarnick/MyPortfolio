@@ -14,7 +14,7 @@ const projects = [
     description:
       "Full-stack website that sends out weekly emails that are then compiled into a hard cover book automatically.",
     image:
-      "https://images.pexels.com/photos/768125/pexels-photo-768125.jpeg?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=800&h=500&fit=crop",
     tags: ["React", "Node.js", "MongoDB", "Stripe", "Bootstrap"],
     github: "https://github.com/AmmonWarnick/MemoryCompanion",
     live: "https://memory-companion.com",
@@ -24,7 +24,7 @@ const projects = [
     description:
       "A full frontend website that offers free finance eduaction and finance tools.",
     image:
-      "https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop",
     tags: ["Node.js", "TypeScript", "React", "Tailwind", "Stripe"],
     github: "https://github.com/AmmonWarnick/learnfreefinance",
     live: "https://learnfreefinance.pages.dev",
@@ -34,10 +34,28 @@ const projects = [
     description:
       "A full-stack website that offers to convert PDF bank statements into CSV files for easy processing.",
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
     tags: ["React", "Supabase", "Tailwind", "Stripe", "Typescript"],
     github: "https://github.com/AmmonWarnick/transcode-spark",
-    live: "/404",
+  },
+  {
+    title: "Seek Pest Solutions",
+    description:
+      "A front end website for pest control solutions.",
+    image:
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=500&fit=crop",
+    tags: ["React", "TypeScript", "Tailwind", "Vercel"],
+    live: "https://seek-solutions-nest.vercel.app/",
+  },
+  {
+    title: "Curbside Locations",
+    description:
+      "A front end website for getting quick information and details about addresses. Along with comparing one place to another.",
+    image:
+      "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=500&fit=crop",
+    tags: ["React", "TypeScript", "Tailwind", "Map APIs"],
+    github: "https://github.com/AmmonWarnick/RentEngine-Takehome",
+    live: "https://rent-engine-project-pi.vercel.app/",
   },
 ];
 
@@ -102,31 +120,35 @@ export const Projects = () => {
                   </div>
                 </CardContent>
                 <CardFooter className="p-6 pt-0 flex gap-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    asChild
-                    className="flex-1"
-                  >
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                  {project.github && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      asChild
+                      className="flex-1"
                     >
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                  <Button size="sm" asChild className="flex-1">
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
-                    </a>
-                  </Button>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </a>
+                    </Button>
+                  )}
+                  {project.live && project.live !== "/404" && (
+                    <Button size="sm" asChild className="flex-1">
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
                 </CardFooter>
               </Card>
             ))}
