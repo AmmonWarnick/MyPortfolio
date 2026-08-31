@@ -58,6 +58,15 @@ const projects = [
     github: "https://github.com/AmmonWarnick/RentEngine-Takehome",
     live: "https://rent-engine-project-pi.vercel.app/",
   },
+  {
+    title: "My Portfolio",
+    description:
+      "This exact website! A personal portfolio built to showcase my projects, skills, and experience.",
+    image:
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=500&fit=crop",
+    tags: ["React", "TypeScript", "Tailwind", "Vite", "shadcn/ui"],
+    github: "https://github.com/AmmonWarnick/MyPortfolio",
+  },
 ];
 
 export const Projects = () => {
